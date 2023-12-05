@@ -72,13 +72,10 @@ function addTask(todo){
 	divE1.appendChild(labelE1);
 	
 	let buttonE1=document.createElement("button");
-	buttonE1.id="deleteBtn";
 	buttonE1.textContent="Delete";
 	buttonE1.classList.add("delete_button");
 	divE1.appendChild(buttonE1);
 	deleteBtn.onclick=function(){
-		console.log(todoId);
-		console.log(liE1);
 		Ondelete(todoId);
 	};
 	
